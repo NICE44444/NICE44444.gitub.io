@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .cart-background{
+      width: 100%;
+      padding: 30px;
+      background-color: #c2d3de;
+      position:relative;
+    }
+    .cart{
+      width: 100%;
+      max-width: 700px;
+      background-color: white;
+      border-collapse: collapse;
+      border-radius: 10px;
+      border-style: hidden;
+    }
+    .cart td,th{
+      border-bottom: 1px solid #c2d3de;
+      text-align: center;
+    }
+    img{
+      object-fit: cover;
+    }
+    .cart th:nth-child(2){
+      width: 200px;
+    }
+    .choose-button{
+      width: 300px;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: coral;
+      position: relative;
+      top: -60px;
+      left: 400px;
+      border: none;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+    .choose-button:hover{
+      background-color: chocolate;
+    }
+    .choose-button:focus{
+      background-color: black;
+    }
+    .choose-button:active{
+      background-color: brown;
+    }
+    .input-test{
+      font-size: 20px;
+    }
+    .input-test:focus{
+      border:2px solid red;
+    }
+    .custom-link{
+      text-decoration: none;
+    }
+    .custom-link:link{
+      color: aqua;
+    }
+    .custom-link:visited{
+      color: black;
+    }
+    .main-button{
+      padding: 10px;
+      font-size: 20px;
+      border:none;
+      cursor: pointer;
+    }
+    .bg-red{
+      background-color: red;
+    }
+    .bg-blue{
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="cart-background">
+    <h1>Your shopping cart</h1>
+    <table class="cart">
+      <thead>
+        <tr>
+          <th></th>
+          <th class=>ITEM</th>
+          <th>AMOUNT</th>
+          <th>PRICE</th>
+          <th>TOTAL</th>
+        </tr>  
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="sonny1.jfif" width="100px"alt=""></td>
+          <td>SONY</td>
+          <td>1</td>
+          <td>$1979.00</td>
+          <td>$1979.00</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td><img src="sonny2.jfif" width="100px"alt=""></td>
+          <td>SONY</td>
+          <td>1</td>
+          <td>$989.00</td>
+          <td>$989.00</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td colspan="5" style="text-align: right;">$2968.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Edit your shopping cart</h2>
+    <div>
+      <button class="choose-button">Choose payment method</button>
+    </div>
+  </div>
+  <input class="input-test">
+  <a href="https://www.naver.com/" class="custom-link">링크</a>
+  <button class="main-button bg-red">구매하기</button>
+  <button class="main-button bg-blue">더 알아보기</button>
+</body>
+</html>

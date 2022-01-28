@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div,input,textarea{
+      box-sizing: border-box;
+    }
+    .full-box{
+      background-color: black;
+      padding: 30px;
+    }
+    .in-box{
+      background-color: white;
+      padding: 30px;
+      width: 80%;
+      max-width: 600px;
+      margin: auto;
+    }
+    .email{
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border:1px solid black;
+    }
+    .w-50{
+      width: 50%;
+      float: left;
+      padding: 20px;
+    }
+    .w-100{
+      width: 100%;
+      padding: 20px;
+    }
+    .w-10{
+      width: 100%;
+      padding: 50px;
+    }
+    .submit-box{
+      width: 20%;
+      padding: 20px;
+      background-color: yellow;
+      border:1px solid white;
+      color: #eeee;
+      display: block;
+      margin-left: auto;
+      margin-top: -40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="full-box">
+    <div class="in-box">
+      <form action="">
+        <div class="w-100">
+          <h2>Contact us</h2>
+          <p>Your Email</p>
+          <input type="email" placeholder="email@example.com" class="email">
+        </div>
+          <div class="w-50">
+            <p>First name</p>
+            <input type="text" class="email">
+          </div>
+          <div class="w-50">
+            <p>Last name</p>
+            <input type="text" class="email">
+          </div>
+          <div style="clear: both;"></div>
+          <div class="w-100">
+            <p>Message</p>
+            <input type="textarea" class="email w-10">
+          </div>
+          <div class="w-100">
+            <input type="checkbox" id="check">
+            <label for="check">Subscribe</label>
+            <button type="submit" class="submit-box">SEND</button>
+          </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

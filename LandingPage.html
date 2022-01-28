@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <title>Document</title>
+  <style>
+    html,body{
+      width: 100%;
+      height: 100%;
+    }
+    .bg-container{
+      background:linear-gradient(360deg,rgba(75,84,220,1)50%, rgba(75,137,220,1)100%);
+      width: 100%;
+      max-width: 2000px;
+      height: 500px;
+    }
+    .content-box{
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+    .content{
+      margin-top: 50px;
+      margin-left: 100px;
+    }
+    .content h2{
+      color: white;
+    }
+    .content-button{
+      width: 150px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: rgb(80, 78, 78);
+      color: white;
+      border: 0;
+    }
+    .aside-img{
+      margin: auto;
+      padding-top: 50px;
+    }
+    .aside-img > img{
+      width: 400px;
+      height: 450px;
+    }
+    .middle-content{
+      width: 100%;
+      max-width: 2000px;
+      height: 200px;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .bg-im{
+      background-color: 	#7E84E6;
+      width: 100%;
+      height: 400px;
+      max-width: 2000px;
+    }
+    .bg-container p{
+      margin: auto;
+    }
+    .bg-im-container{
+      display: flex;
+      width: 100%;
+      height: 200px;
+    }
+    .im-icon{
+      background-color: white;
+      margin: auto;
+      width: 100px;
+      height: 100px;
+      box-sizing: border-box;
+      border-radius: 50px;
+      text-align: center;
+      color: #7E84E6;
+      padding-top: 27px;
+    }
+    .im-icon h4{
+      color: white;
+    }
+    .im-icon p{
+      color: white;
+    }
+    .im-title{
+      width: 100%;
+      text-align: center;
+      padding-top : 20px;
+      color: white;
+    }
+    .bg-picture-container{
+      text-align: left;
+      max-width: 1200px;
+      margin: auto;      
+    }
+    .picture-1{
+      float: left;
+      width: 50%;
+      height: 350px;
+      background-image: url(/img/portfolio-1.jpg);
+    }
+    .picture-text{
+      color: white;
+      padding: 50px;
+      width: 100%;
+    }
+
+    @media screen and (max-width : 768px){
+      .content-box{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: auto;
+      }
+      .content{
+        text-align: center;
+        width: 100%;
+      }
+      .aside-img > img{
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-container">
+    <div class="content-box">
+      <div class="content">
+        <h2>Landig Page for Apps</h2>
+        <p style="color: white;">Ex adipisicing est culpa elit eu. <br> Amet ea elit in irure sunt cillum reprehenderit nulla minim excepteur nostrud.</p>
+        <button class="content-button">Show More</button>
+      </div>
+      <div class="aside-img">
+        <img src="/img/iphone.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="middle-content">
+    <h4>It is the perfect theme for your next Project!</h4>
+    <p>Enim aliquip adipisicing veniam pariatur mollit nostrud et amet.</p>
+    <button class="content-button">show Portfolio</button>
+  </div>
+
+  <div class="bg-im">
+    <div class="im-title">
+      <p>Service</p>
+      <h4>What We Offer</h4>
+    </div>
+    <div  class="bg-im-container">
+      <div class="im-icon">
+        <i class="fas fa-mobile-alt fa-3x"></i>
+        <h4>Responsive</h4>
+        <p>lorem ipsum i love coding</p>
+      </div>
+      <div class="im-icon">
+        <i class="fas fa-flask fa-3x"></i>
+        <h4>Experiments</h4>
+        <p>lorem ipsum i love coding</p>
+      </div>
+      <div class="im-icon">
+        <i class="fas fa-bolt fa-3x"></i>
+        <h4>Quickness</h4>
+        <p>lorem ipsum i love coding</p>
+      </div>
+      <div class="im-icon">
+        <i class="fas fa-globe-europe fa-3x"></i>
+        <h4>Global Shipping</h4>
+        <p>lorem ipsum i love coding</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="im-title">
+    <p style="color: black;">Portfolio</p>
+    <h4 style="color: black;">What we can Do</h4>
+  </div>
+
+  <div class="bg-picture-container">
+    <div class="picture-1">
+      <div class="picture-text">
+        <h4>Stationary</h4>
+        <p>Voluptate veniam nostrud aute proidficia enim.</p>
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+    <div class="picture-1" style="background-image: url(/img/portfolio-2.jpg);">
+      <div class="picture-text">
+        <h4>Stationary</h4>
+        <p>Voluptate veniam nostrud aute proidficia enim.</p>
+      </div>
+    </div>
+    <div class="picture-1" style="background-image: url(/img/portfolio-3.jpg);">
+      <div class="picture-text">
+        <h4>Stationary</h4>
+        <p>Voluptate veniam nostrud aute proidficia enim.</p>
+    </div>
+      </div>
+    <div class="picture-1" style="background-image: url(/img/portfolio-4.jpg);">
+      <div class="picture-text">
+        <h4>Stationary</h4>
+        <p>Voluptate veniam nostrud aute proidficia enim.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
